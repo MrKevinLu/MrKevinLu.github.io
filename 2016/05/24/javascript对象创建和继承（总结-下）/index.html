@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript,继承,原型对象," />
 
 
 
@@ -80,15 +80,16 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MrKevinLu' Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="&amp;#x4E0A;&amp;#x4E00;&amp;#x7BC7;&amp;#x4E3B;&amp;#x8981;&amp;#x5C31;js&amp;#x4E2D;&amp;#x521B;&amp;#x5EFA;&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x51E0;&amp;#x79CD;&amp;#x65B9;&amp;#x5F0F;&amp;#x4EE5;&amp;#x53CA;&amp;#x5B83;&amp;#x4EEC;&amp;#x7684;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x8FD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript对象创建和继承（总结-下）">
+<meta property="og:url" content="http://yoursite.com/2016/05/24/javascript对象创建和继承（总结-下）/index.html">
 <meta property="og:site_name" content="MrKevinLu' Blog">
-<meta property="og:description">
+<meta property="og:description" content="&amp;#x4E0A;&amp;#x4E00;&amp;#x7BC7;&amp;#x4E3B;&amp;#x8981;&amp;#x5C31;js&amp;#x4E2D;&amp;#x521B;&amp;#x5EFA;&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x51E0;&amp;#x79CD;&amp;#x65B9;&amp;#x5F0F;&amp;#x4EE5;&amp;#x53CA;&amp;#x5B83;&amp;#x4EEC;&amp;#x7684;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x8FD">
+<meta property="og:updated_time" content="2016-05-29T08:20:31.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MrKevinLu' Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="javascript对象创建和继承（总结-下）">
+<meta name="twitter:description" content="&amp;#x4E0A;&amp;#x4E00;&amp;#x7BC7;&amp;#x4E3B;&amp;#x8981;&amp;#x5C31;js&amp;#x4E2D;&amp;#x521B;&amp;#x5EFA;&amp;#x5BF9;&amp;#x8C61;&amp;#x7684;&amp;#x51E0;&amp;#x79CD;&amp;#x65B9;&amp;#x5F0F;&amp;#x4EE5;&amp;#x53CA;&amp;#x5B83;&amp;#x4EEC;&amp;#x7684;&amp;#x4F18;&amp;#x7F3A;&amp;#x70B9;&amp;#x8FD">
 
 
 
@@ -106,7 +107,7 @@
   };
 </script>
 
-  <title> Archive | MrKevinLu' Blog </title>
+  <title> javascript对象创建和继承（总结-下） | MrKevinLu' Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="default">
@@ -137,7 +138,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -235,251 +236,173 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 6 posts in total. Keep on posting.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/29/deploy/" itemprop="url">
-              
-                <span itemprop="name">deploy</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-29T15:54:31+08:00"
-              content="2016-05-29" >
-          05-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/24/javascript对象创建和继承（总结-下）/" itemprop="url">
-              
-                <span itemprop="name">javascript对象创建和继承（总结-下）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-24T18:33:32+08:00"
-              content="2016-05-24" >
-          05-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/22/javascript对象创建和继承（总结）/" itemprop="url">
-              
-                <span itemprop="name">javascript对象创建和继承（总结-上）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-22T19:40:15+08:00"
-              content="2016-05-22" >
-          05-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/11/web缓存机制/" itemprop="url">
-              
-                <span itemprop="name">web缓存机制二三事</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-11T23:18:03+08:00"
-              content="2016-04-11" >
-          04-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/10/how-to-use-webpack/" itemprop="url">
-              
-                <span itemprop="name">how to use webpack</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-10T22:37:43+08:00"
-              content="2016-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/10/hello-world/" itemprop="url">
-              
-                <span itemprop="name">初来乍到，共勉之</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-10T22:28:35+08:00"
-              content="2016-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                javascript对象创建和继承（总结-下）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-05-24T18:33:32+08:00" content="2016-05-24">
+              2016-05-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/24/javascript对象创建和继承（总结-下）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/24/javascript对象创建和继承（总结-下）/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>&#x4E0A;&#x4E00;&#x7BC7;&#x4E3B;&#x8981;&#x5C31;js&#x4E2D;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x8FDB;&#x884C;&#x4E86;&#x4ECB;&#x7ECD;&#xFF0C;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x8BB2;&#x8BB2;js&#x4E2D;&#x7684;<span style="color:red;font-weight:bold">&#x7EE7;&#x627F;</span>&#x76F8;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BED;&#x8A00;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x3002;</p>
+<h1 id=""><a href="#" class="headerlink" title=" "></a> </h1>
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/继承/" rel="tag">#继承</a>
+          
+            <a href="/tags/原型对象/" rel="tag">#原型对象</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/22/javascript对象创建和继承（总结）/" rel="next" title="javascript对象创建和继承（总结-上）">
+                <i class="fa fa-chevron-left"></i> javascript对象创建和继承（总结-上）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/29/deploy/" rel="prev" title="deploy">
+                deploy <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/05/24/javascript对象创建和继承（总结-下）/"
+     data-title="javascript对象创建和继承（总结-下）"
+     data-content=""
+     data-url="http://yoursite.com/2016/05/24/javascript对象创建和继承（总结-下）/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -487,6 +410,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/24/javascript对象创建和继承（总结-下）/"
+           data-title="javascript对象创建和继承（总结-下）" data-url="http://yoursite.com/2016/05/24/javascript对象创建和继承（总结-下）/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -506,8 +437,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -559,6 +499,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"> </span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -655,11 +606,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
